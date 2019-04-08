@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://static.sketchfab.com/img/press/logos/logo-sketchfab-grey.png" width="600" /></p>
+<h1 align="center">Frontend Tech Exercise</h1>
 
-## Available Scripts
+Welcome ! This exercise is meant for us to gauge as best as possible your expertise in various fields, such as :
 
-In the project directory, you can run:
+- Proficiency with Javascript/React
+- Interaction with our REST API
+- Sensivity to UX/UI topics
 
-### `npm start`
+As such, the exercise itself is rather open ended. Only a few key points are mandatory. Rest assured that we will evaluate any feature/element you add that goes beyond those key points to their proper value.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This repository contains the bootstrap code for the exercise. To complete it, clone this repository to your local machine, create a branch, update it at your will, and create a PR against the repo. We will review it ASAP.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Context
 
-### `npm test`
+You've discovered Sketchfab a couple days ago and immediately determined that its 3D viewer is exactly what you needed to present your work. However, you wish you had your own more customized UI to present what you put there in a way that best fits your needs. And so, you've decided to build an alternative UI for Sketchfab, using their API and Create React App.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Objectives
 
-### `npm run build`
+Your first mission is to upload a couple models on your Sketchfab account (the models themselves don't need to be anything more than cubes/planes/whatever you can find !). We'll be using those in the end result. Then, the UI you build should :
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- List your own models
+- List the models you've liked on the site (separately, one way or another)
+- When you select a model either of those lists, display the corresponding embed somehow
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Those are the core features we're looking for. The form of the components you implement is not imposed. Anything going beyond the core features will be greatly appreciated, as will a particular attention to details on the core features. A few suggestions that come in mind would be e.g. :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add like/share buttons (needs oauth)
+- Upload UI
+- More lists, filters
+- Model metadata update UI
+- Play with the Sketchfab Viewer API to add some weird features to the embed
+- Some form of offline support
+- ... We love to be surprised ! :)
 
-### `npm run eject`
+### Resources
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [Sketchfab v3 API Token](https://sketchfab.com/settings/password)
+- [Sketchfab v3 API docs](https://docs.sketchfab.com/data-api/v3/index.html)
+- [Sketchfab developer resources](https://sketchfab.com/developers)
+- [Sketchfab oAuth docs](https://sketchfab.com/developers/oauth) (Alternatively, auth0 has some much better written generalistic oauth documentation)
+- [Sketchfab Viewer API docs](https://sketchfab.com/developers/viewer)
+- [Create React App](https://github.com/facebook/create-react-app)
