@@ -5,7 +5,7 @@ Welcome ! This exercise is meant for us to gauge as best as possible your expert
 
 - Proficiency with Javascript/React
 - Interaction with our REST API
-- Sensivity to UX/UI topics
+- Sensivity to UX/UI topics, attention to detail
 
 As such, the exercise itself is rather open ended. Only a few key points are mandatory. Rest assured that we will evaluate any feature/element you add that goes beyond those key points to their proper value.
 
@@ -17,14 +17,15 @@ You've discovered Sketchfab a couple days ago and immediately determined that it
 
 ### Objectives
 
-Your first mission is to upload a couple models on your Sketchfab account (the models themselves don't need to be anything more than cubes/planes/whatever you can find !). We'll be using those in the end result. Then, the UI you build should :
+Your first mission is to upload a couple models on your Sketchfab account (the models themselves don't need to be anything more than cubes/planes/whatever you can find !). We'll be using those in the end result. Then, it's time to start building the UI. It should allow you to :
 
 - List your own models
-- List the models you've liked on the site (separately, one way or another)
-- When you select a model either of those lists, display the corresponding embed somehow
+- List the models you've liked on sketchfab.com (in a separate list)
+- When you click/select a model in either of those lists, the corresponding Sketchfab 3D embed should show up one way or the other — as well as at least some model metadata (title, description, author name ...). There are various ways to acquire the embed URL — pick your favourite.
 
-Those are the core features we're looking for. The form of the components you implement is not imposed. Anything going beyond the core features will be greatly appreciated, as will a particular attention to details on the core features. A few suggestions that come in mind would be e.g. :
+The list of models should behave in a similar fashion to e.g. https://sketchfab.com/3d-models/popular — They have cards representing models, the cards display certain amounts of informations, and when you select one the model page appears. Those are the core features we're looking for. The form of the components you implement is not imposed. Anything going beyond the core features will be greatly appreciated, as will a particular attention to details on the core features. A few suggestions that come in mind would be e.g. :
 
+- oauth authentication (if you go down this path, contact us for credentials !)
 - Add like/share buttons (needs oauth)
 - Upload UI
 - More lists, filters
