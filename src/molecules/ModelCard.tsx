@@ -1,10 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { IModel } from '../type';
 
-const StyledModelCard = styled.div``
+const StyledModelCard = styled.div``;
 
-const ModelCard = () => {
-  return <StyledModelCard></StyledModelCard>
-}
+type ModelCardProps = {
+  model: IModel;
+};
 
-export default ModelCard
+const ModelCard = ({ model }: ModelCardProps) => {
+  return <StyledModelCard>{model.uid}</StyledModelCard>;
+};
+
+export default ModelCard;

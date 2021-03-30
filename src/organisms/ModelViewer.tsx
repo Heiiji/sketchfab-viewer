@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-const StyledModelViewer = styled.div``
+const StyledModelViewer = styled.div``;
 
 const ModelViewer = () => {
-  return <StyledModelViewer></StyledModelViewer>
-}
+  return <StyledModelViewer></StyledModelViewer>;
+};
 
-export default ModelViewer
+export default ModelViewer;

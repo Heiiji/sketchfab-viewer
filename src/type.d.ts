@@ -1,50 +1,118 @@
 interface IUser {
-  subscriptionCount: number
-  followerCount: number
-  uid: string
-  modelsUrl: string
-  likeCount: number
-  facebookUsername: string
-  biography: string
-  city: string
-  tagline: string
-  modelCount: number
-  twitterUsername: string
-  email: string
-  website: string
-  billingCycle: string
-  followersUrl: string
-  collectionCount: number
-  dateJoined: Date
-  account: string
-  displayName: string
-  profileUrl: string
-  followingsUrl: string
+  subscriptionCount: number;
+  followerCount: number;
+  uid: string;
+  modelsUrl: string;
+  likeCount: number;
+  facebookUsername: string;
+  biography: string;
+  city: string;
+  tagline: string;
+  modelCount: number;
+  twitterUsername: string;
+  email: string;
+  website: string;
+  billingCycle: string;
+  followersUrl: string;
+  collectionCount: number;
+  dateJoined: Date;
+  account: string;
+  displayName: string;
+  profileUrl: string;
+  followingsUrl: string;
   skills: [
     {
-      name: string
-      uri: string
+      name: string;
+      uri: string;
     }
-  ]
-  country: string
-  uri: string
-  apiToken: string
-  username: string
-  linkedinUsername: string
-  likesUrl: string
+  ];
+  country: string;
+  uri: string;
+  apiToken: string;
+  username: string;
+  linkedinUsername: string;
+  likesUrl: string;
   avatar: {
     images: [
       {
-        url: string
-        width: number
-        height: number
-        size: number
+        url: string;
+        width: number;
+        height: number;
+        size: number;
       }
-    ]
-    uid: string
-    uri: string
-  }
-  isLimited: true
-  followingCount: number
-  collectionsUrl: string
+    ];
+    uid: string;
+    uri: string;
+  };
+  isLimited: boolean;
+  followingCount: number;
+  collectionsUrl: string;
 }
+
+interface IModel {
+  uid: string;
+  tags: [
+    {
+      slug: string;
+      uri: string;
+    }
+  ];
+  viewerUrl: string;
+  isProtected: boolean;
+  categories: [
+    {
+      uri: string;
+      uid: string;
+      name: string;
+      slug: string;
+    }
+  ];
+  publishedAt: Date;
+  likeCount: number;
+  commentCount: number;
+  viewCount: number;
+  vertexCount: number;
+  user: {
+    username: string;
+    profileUrl: string;
+    account: string;
+    displayName: string;
+    uid: string;
+    uri: string;
+    avatar: [
+      {
+        images: [
+          {
+            url: string;
+            width: number;
+            height: number;
+            size: number;
+          }
+        ];
+        uid: string;
+        uri: string;
+      }
+    ];
+  };
+  isDownloadable: boolean;
+  animationCount: number;
+  name: string;
+  soundCount: number;
+  isAgeRestricted: boolean;
+  uri: string;
+  faceCount: number;
+  createdAt: Date;
+  thumbnails: {
+    images: [
+      {
+        url: string;
+        width: number;
+        uid: string;
+        height: number;
+      }
+    ];
+  };
+  embedUrl: string;
+}
+
+export { IModel, IUser };

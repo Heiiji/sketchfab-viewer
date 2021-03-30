@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-const StyledBanner = styled.div``
+const StyledBanner = styled.div``;
 
 const Banner = () => {
-  return <StyledBanner></StyledBanner>
-}
+  return <StyledBanner></StyledBanner>;
+};
 
-export default Banner
+export default Banner;

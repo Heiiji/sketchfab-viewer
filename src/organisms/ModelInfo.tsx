@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-const StyledModelInfo = styled.div``
+const StyledModelInfo = styled.div``;
 
 const ModelInfo = () => {
-  return <StyledModelInfo></StyledModelInfo>
-}
+  return <StyledModelInfo></StyledModelInfo>;
+};
 
-export default ModelInfo
+export default ModelInfo;
