@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledAriane = styled.div`
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid ${({ theme }) => theme.primaryColor};
+  border-radius: 10px;
   .ariane-elem {
     color: black;
     margin: 5px;
@@ -13,6 +17,10 @@ const StyledAriane = styled.div`
     :hover {
       color: ${({ theme }) => theme.primaryColor};
     }
+  }
+
+  :hover {
+    background-color: rgba(100, 100, 100, 0.035);
   }
 `;
 
