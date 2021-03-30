@@ -26,7 +26,7 @@ const ListModel = ({ title, url }: ListModelProps) => {
       <h2>{title}</h2>
       <div>
         {models.map((model) => (
-          <ModelCard key={model.uid} model={model} />
+          <ModelCard key={model.uid} model={model} onSelect={(id: string) => console.log('select', id)} />
         ))}
       </div>
     </StyledListModel>

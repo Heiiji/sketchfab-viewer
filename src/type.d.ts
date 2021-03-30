@@ -97,6 +97,7 @@ interface IModel {
   isDownloadable: boolean;
   animationCount: number;
   name: string;
+  description: string;
   soundCount: number;
   isAgeRestricted: boolean;
   uri: string;
