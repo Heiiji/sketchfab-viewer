@@ -72,28 +72,7 @@ interface IModel {
   commentCount: number;
   viewCount: number;
   vertexCount: number;
-  user: {
-    username: string;
-    profileUrl: string;
-    account: string;
-    displayName: string;
-    uid: string;
-    uri: string;
-    avatar: [
-      {
-        images: [
-          {
-            url: string;
-            width: number;
-            height: number;
-            size: number;
-          }
-        ];
-        uid: string;
-        uri: string;
-      }
-    ];
-  };
+  user: IUser;
   isDownloadable: boolean;
   animationCount: number;
   name: string;

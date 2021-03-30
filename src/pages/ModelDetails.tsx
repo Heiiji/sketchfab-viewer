@@ -28,7 +28,6 @@ const ModelDetails = ({ match }: RouteComponentProps<TParams>) => {
   if (!model) {
     return <p>Loading</p>;
   }
-  console.log(model);
 
   return (
     <ModelDetailsStyled>
