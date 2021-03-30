@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const HomeStyled = styled.div`
@@ -39,19 +39,17 @@ const HomeStyled = styled.div`
   }
 `
 
-class Home extends Component {
-  render() {
-    return (
-      <HomeStyled>
-        <header className='App-header'>
-          <img src={'https://static.sketchfab.com/img/press/logos/logo.png'} className='App-logo' alt='logo' />
-          <p>
-            Welcome to the <code>Tech/Frontend</code> exercise.
-          </p>
-        </header>
-      </HomeStyled>
-    )
-  }
+const Home = () => {
+  return (
+    <HomeStyled>
+      <header className='App-header'>
+        <img src={'https://static.sketchfab.com/img/press/logos/logo.png'} className='App-logo' alt='logo' />
+        <p>
+          Welcome to the <code>Tech/Frontend</code> exercise.
+        </p>
+      </header>
+    </HomeStyled>
+  )
 }
 
 export default Home
