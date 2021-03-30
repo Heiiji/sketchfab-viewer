@@ -23,9 +23,7 @@ function Router() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/details'>
-          <ModelDetails />
-        </Route>
+        <Route path='/model/:uid' component={ModelDetails}></Route>
       </Switch>
     </UserContext.Provider>
   );

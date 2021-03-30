@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import client from '../_helpers/api';
 import ModelCard from '../molecules/ModelCard';
 import { IModel } from '../type';
+import { Link } from 'react-router-dom';
 
 const StyledListModel = styled.div``;
 
@@ -26,7 +27,9 @@ const ListModel = ({ title, url }: ListModelProps) => {
       <h2>{title}</h2>
       <div>
         {models.map((model) => (
-          <ModelCard key={model.uid} model={model} onSelect={(id: string) => console.log('select', id)} />
+          <Link key={model.uid} to={`/model/${model.uid}`}>
+            <ModelCard model={model} onSelect={(id: string) => console.log('select', id)} />
+          </Link>
         ))}
       </div>
     </StyledListModel>

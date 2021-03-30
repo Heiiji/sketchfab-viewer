@@ -5,6 +5,8 @@ import PreviewModel from '../atoms/PreviewModel';
 
 const StyledModelCard = styled.div`
   transition: 0.3s;
+  color: black;
+  text-decoration: none;
   margin: 10px;
   display: inline-block;
   width: 200px;

@@ -17,7 +17,7 @@ const StyledBanner = styled.div`
     overflow: hidden;
     position: absolute;
     transform: translateY(30%);
-    right: 0;
+    right: 20px;
     bottom: 0;
   }
 `;
