@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IModel } from '../type';
 
 interface IStyledProps {
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
@@ -9,7 +8,15 @@ interface IStyledProps {
 
 const StyledProfilImage = styled.div.attrs<IStyledProps>(({ onClick }) => ({
   onClick: onClick
-}))<IStyledProps>``;
+}))<IStyledProps>`
+  background-image: url('${({ image }) => image}');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+`;
 
 type ProfilImageProps = {
   image: string;
