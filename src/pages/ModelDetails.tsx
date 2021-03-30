@@ -6,6 +6,7 @@ import { IModel } from '../type';
 import Banner from '../organisms/Banner';
 import ModelViewer from '../organisms/ModelViewer';
 import ModelInfo from '../organisms/ModelInfo';
+import Ariane from '../molecules/Ariane';
 
 const ModelDetailsStyled = styled.div`
   .corpus {
@@ -29,9 +30,20 @@ const ModelDetails = ({ match }: RouteComponentProps<TParams>) => {
     return <p>Loading</p>;
   }
 
+  const path = [
+    {
+      name: 'Home',
+      url: '/'
+    },
+    {
+      name: model.name
+    }
+  ];
+
   return (
     <ModelDetailsStyled>
       <Banner />
+      <Ariane path={path} />
       <div className='corpus'>
         <ModelViewer modelId={model.uid} />
         <ModelInfo model={model} />
