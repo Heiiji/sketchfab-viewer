@@ -25,10 +25,10 @@ const ModelInfo = ({ model }: ModelInfoProps) => {
   return (
     <StyledModelInfo>
       <h1>{model.name}</h1>
+      <p>{moment(model.publishedAt).fromNow()}</p>
       <div className='stats'>
         <CardStats model={model} />
       </div>
-      <p>{moment(model.publishedAt).format('MMMM Do YYYY, h:mm:ss a')}</p>
       <p>{model.description}</p>
     </StyledModelInfo>
   );

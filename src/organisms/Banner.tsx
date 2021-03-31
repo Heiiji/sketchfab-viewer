@@ -9,9 +9,10 @@ const StyledBanner = styled.div`
   background-position: center;
   width: 100%;
   height: 200px;
-  position: relative;
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: -90px;
 
   .profilBox {
     text-align: right;

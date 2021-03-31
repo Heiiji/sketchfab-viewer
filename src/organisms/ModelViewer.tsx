@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const StyledModelViewer = styled.div`
   flex: 1;
   min-width: 550px;
+
+  iframe {
+    border: none;
+  }
 `;
 
 type ModelViewerProps = {

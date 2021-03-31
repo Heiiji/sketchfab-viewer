@@ -52,6 +52,7 @@ const ModelDetails = ({ match }: RouteComponentProps<TParams>) => {
         <ModelViewer modelId={model.uid} />
         <ModelInfo model={model} />
       </div>
+      <hr />
       <ModelComm modelId={model.uid} />
     </ModelDetailsStyled>
   );
