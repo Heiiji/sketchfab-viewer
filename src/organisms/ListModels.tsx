@@ -11,6 +11,11 @@ const StyledListModel = styled.div`
   h2 {
     cursor: pointer;
   }
+
+  .chevron {
+    font-size: 0.8em;
+    transition: 0.3s;
+  }
 `;
 
 type ListModelProps = {
@@ -35,9 +40,9 @@ const ListModel = ({ title, url }: ListModelProps) => {
         {title}{' '}
         <FontAwesomeIcon
           style={{
-            transition: '0.3s',
             transform: collapse ? 'rotate(0deg)' : 'rotate(90deg)'
           }}
+          className='chevron'
           icon={faChevronRight}
         />
       </h2>

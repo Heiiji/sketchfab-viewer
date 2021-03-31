@@ -15,7 +15,11 @@ const listView = [
   }
 ];
 
-const HomeStyled = styled.div``;
+const HomeStyled = styled.div`
+  .corpus {
+    padding: 10px;
+  }
+`;
 
 const Home = () => {
   const path = [
@@ -28,10 +32,12 @@ const Home = () => {
   return (
     <HomeStyled>
       <Banner />
-      <Ariane path={path} />
-      {listView.map((view) => (
-        <ListModels key={view.title} title={view.title} url={view.url} />
-      ))}
+      <div className='corpus'>
+        <Ariane path={path} />
+        {listView.map((view) => (
+          <ListModels key={view.title} title={view.title} url={view.url} />
+        ))}
+      </div>
     </HomeStyled>
   );
 };
