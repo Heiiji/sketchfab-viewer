@@ -2,12 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IStyledProps {
-  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   image: string;
 }
 
-const StyledProfilImage = styled.div.attrs<IStyledProps>(({ onClick }) => ({
-  onClick: onClick
+const StyledProfilImage = styled.div.attrs<IStyledProps>(({ image }) => ({
+  image: image
 }))<IStyledProps>`
   background-image: url('${({ image }) => image}');
   background-size: cover;
@@ -23,7 +22,7 @@ type ProfilImageProps = {
 };
 
 const ProfilImage = ({ image }: ProfilImageProps) => {
-  return <StyledProfilImage onClick={() => console.log('yo')} image={image} />;
+  return <StyledProfilImage image={image} />;
 };
 
 export default ProfilImage;
