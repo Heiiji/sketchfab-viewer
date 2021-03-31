@@ -95,4 +95,17 @@ interface IModel {
   embedUrl: string;
 }
 
-export { IModel, IUser };
+interface IComment {
+  body: string;
+  uid: string;
+  uri: string;
+  createdAt: Date;
+  user: IUser;
+  updatedAt: Date;
+  model: {
+    uid: string;
+  };
+  isDeleted: boolean;
+}
+
+export { IModel, IUser, IComment };

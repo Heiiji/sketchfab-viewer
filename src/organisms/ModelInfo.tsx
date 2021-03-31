@@ -7,7 +7,7 @@ import CardStats from '../atoms/CardStats';
 const StyledModelInfo = styled.div`
   flex: 1;
   padding: 10px;
-  min-width: 600px;
+  min-width: 550px;
   .stats {
     width: 200px;
   }

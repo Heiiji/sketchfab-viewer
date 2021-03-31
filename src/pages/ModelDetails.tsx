@@ -7,6 +7,7 @@ import Banner from '../organisms/Banner';
 import ModelViewer from '../organisms/ModelViewer';
 import ModelInfo from '../organisms/ModelInfo';
 import Ariane from '../molecules/Ariane';
+import ModelComm from '../organisms/ModelComm';
 
 const ModelDetailsStyled = styled.div`
   .corpus {
@@ -51,6 +52,7 @@ const ModelDetails = ({ match }: RouteComponentProps<TParams>) => {
         <ModelViewer modelId={model.uid} />
         <ModelInfo model={model} />
       </div>
+      <ModelComm modelId={model.uid} />
     </ModelDetailsStyled>
   );
 };

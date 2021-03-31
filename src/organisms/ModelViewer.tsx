@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledModelViewer = styled.div`
   flex: 1;
-  min-width: 600px;
+  min-width: 550px;
 `;
 
 type ModelViewerProps = {
