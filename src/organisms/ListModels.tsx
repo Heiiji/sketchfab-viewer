@@ -21,9 +21,10 @@ const StyledListModel = styled.div`
 type ListModelProps = {
   title: string;
   url: string;
+  EmptyState?: any;
 };
 
-const ListModel = ({ title, url }: ListModelProps) => {
+const ListModel = ({ title, url, EmptyState }: ListModelProps) => {
   const [collapse, setCollapse] = useState(false);
   const [models, setModels] = useState<Array<IModel>>([]);
 
@@ -48,11 +49,13 @@ const ListModel = ({ title, url }: ListModelProps) => {
       </h2>
       {!collapse && (
         <div>
-          {models.map((model) => (
-            <Link key={model.uid} to={`/model/${model.uid}`}>
-              <ModelCard model={model} onSelect={(id: string) => console.log('select', id)} />
-            </Link>
-          ))}
+          {models.length > 0
+            ? models.map((model) => (
+                <Link key={model.uid} to={`/model/${model.uid}`}>
+                  <ModelCard model={model} onSelect={(id: string) => console.log('select', id)} />
+                </Link>
+              ))
+            : EmptyState}
         </div>
       )}
     </StyledListModel>

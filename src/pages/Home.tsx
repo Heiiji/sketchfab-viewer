@@ -3,15 +3,19 @@ import styled from 'styled-components';
 import Banner from '../organisms/Banner';
 import ListModels from '../organisms/ListModels';
 import Ariane from '../molecules/Ariane';
+import MyModelEmpty from '../molecules/MyModelsEmpty';
+import ModelsLikeEmpty from '../molecules/ModelsLikeEmpty';
 
 const listView = [
   {
     title: 'My models',
-    url: '/me/models'
+    url: '/me/models',
+    emptyState: <MyModelEmpty />
   },
   {
     title: 'Liked models',
-    url: '/me/likes'
+    url: '/me/likes',
+    emptyState: <ModelsLikeEmpty />
   }
 ];
 
@@ -35,7 +39,7 @@ const Home = () => {
       <div className='corpus'>
         <Ariane path={path} />
         {listView.map((view) => (
-          <ListModels key={view.title} title={view.title} url={view.url} />
+          <ListModels key={view.title} title={view.title} url={view.url} EmptyState={view.emptyState} />
         ))}
       </div>
     </HomeStyled>
