@@ -5,6 +5,9 @@
 
  - I use env variables for API Url and APi token (see src/_helpers/api.js)
 
+
+### Herited readme
+
 Welcome ! This exercise is meant for us to gauge as best as possible your expertise in various fields, such as :
 
 - Proficiency with Javascript/React
