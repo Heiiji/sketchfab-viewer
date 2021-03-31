@@ -11,6 +11,9 @@ import Ariane from '../molecules/Ariane';
 const ModelDetailsStyled = styled.div`
   .corpus {
     padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `;
 
