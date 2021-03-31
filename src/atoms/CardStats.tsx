@@ -21,10 +21,10 @@ const CardStats = ({ model }: CardStatsProps) => {
   return (
     <StyledCardStats>
       <p>
-        {model.commentCount} <FontAwesomeIcon icon={faComment} />
+        <FontAwesomeIcon icon={faComment} /> {model.commentCount}
       </p>
       <p>
-        {model.likeCount} <FontAwesomeIcon icon={faThumbsUp} />
+        <FontAwesomeIcon icon={faThumbsUp} /> {model.likeCount}
       </p>
     </StyledCardStats>
   );
