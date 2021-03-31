@@ -1,6 +1,10 @@
 <p align="center"><img src="https://static.sketchfab.com/img/press/logos/logo-sketchfab-grey.png" width="600" /></p>
 <h1 align="center">Frontend Tech Exercise</h1>
 
+<h2>Info</h2>
+
+ - I use env variables for API Url and APi token (see src/_helpers/api.js)
+
 Welcome ! This exercise is meant for us to gauge as best as possible your expertise in various fields, such as :
 
 - Proficiency with Javascript/React
