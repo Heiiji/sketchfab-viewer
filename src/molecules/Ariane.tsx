@@ -17,6 +17,10 @@ const StyledAriane = styled.div`
     :hover {
       color: ${({ theme }) => theme.primaryColor};
     }
+
+    :last-child {
+      color: ${({ theme }) => theme.primaryColor};
+    }
   }
 
   :hover {
